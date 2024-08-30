@@ -10,14 +10,11 @@ from sqlalchemy import Integer, String, Text
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
-from dotenv import load_dotenv
 import os
-
-load_dotenv()
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ['FLASK_KEY']
+app.config['SECRET_KEY'] = os.environ.get("FLASK_KEY")
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
