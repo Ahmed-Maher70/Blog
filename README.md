@@ -40,7 +40,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [P
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/YourUsername/your-blog-project
+    git clone https://github.com/Ahmed-Maher70/Blog.git
     ```
 
 2. **Navigate into the project directory:**
